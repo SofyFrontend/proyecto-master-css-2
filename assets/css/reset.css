@@ -1,0 +1,63 @@
+/* hoja de estilo para quitar todos los estilos que ponen los 
+diferentes navegadores por defecto, y asi garantizar que se vea en todos por igual */
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color:inherit;
+}
+
+p a {
+    display: inline;
+}
+
+img,
+video,
+iframe,
+picture,
+figure {
+    max-width: 100%;
+    display: block;
+}
+
+form,
+input,
+select,
+textarea,
+button,
+label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
