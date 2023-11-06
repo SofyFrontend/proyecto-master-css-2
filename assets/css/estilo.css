@@ -171,3 +171,21 @@ body {
     transform: translateX(0);
 
 }
+
+.submenu__title:hover {
+    color: var(--color-primario);
+}
+
+.submenu__title::after {
+    content: "";
+    height: 0.1rem;
+    width: 0;
+    background-color: var(--color-primario);
+    position: absolute;
+    top:50%;
+left: 0;
+transition: all 300ms ease-in-out;
+}
+.submenu__title:hover::after{
+    width: 100%;
+}
