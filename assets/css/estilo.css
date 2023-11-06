@@ -1,0 +1,30 @@
+/* variables */
+:root{
+--color-text-body:#525260;
+}
+/* estilos generales */
+html{
+    font-size: 10px;
+    overflow-x: hidden; 
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color:var(--color-text-body) ;
+    line-height: 1.5;
+
+}
+
+/* estrucutura */
+
+.layout{
+    width: 100%;
+    min-width: 1600px;
+    height: 100%;
+    
+}
