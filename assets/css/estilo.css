@@ -390,8 +390,8 @@ body {
 /* Servicios */
 .layout__services {
     position: relative;
-    margin: 5rem 4rem;
-    z-index: 1;
+    margin: 14rem 10rem;
+    z-index: 2;
 
 }
 
@@ -506,4 +506,23 @@ body {
 }
 .services__service--top{
     margin-top: 0;
+}
+/* formas detras de los servicios */
+.service-shapes__item{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+.service-shapes__item--shape1{
+    top:-60px;
+    right: 85px;
+
+}
+.service-shapes__item--shape2{
+    top:10%;
+left: 652px;
+}
+.service-shapes__item--shape3{
+    top:34%;
+    left: 80px;
 }
