@@ -8,7 +8,7 @@
     --color_bg_btn: #ffdc60;
     --color-subtitulo: #c75c6f;
     --color-titulo: #292930;
-
+    --color-bg-services: #f8f8f8;
 }
 
 /* estilos generales */
@@ -431,8 +431,55 @@ body {
     margin-bottom: 4rem;
     border-radius: 3rem;
     background-color: var(--color-secundario);
-    background: linear-gradient(180deg, #f8f8f8, rgba(255, 255, 255, 0));
+    background: linear-gradient(180deg, var(--color-bg-services), rgba(255, 255, 255, 0));
     border: 1px solid;
-    border-image-source: linear-gradient(90deg, #f8f8f8, rgba(255, 255, 255, 0));
-    ;
+    border-image-source: linear-gradient(90deg, var(--color-bg-services), rgba(255, 255, 255, 0));
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: row;
 }
+
+.services__service:hover {
+    background-color: var(--color-bg-services);
+}
+
+.service__container-img {
+    margin-right: 2.5rem;
+    max-width: 8.5em;
+    flex: 1;
+}
+
+.service__content {
+    flex: 1;
+}
+
+.service__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service__description {
+    overflow: hidden;
+    margin-bottom: 4rem;
+    font-size: 1.7rem;
+
+}
+
+.service__more {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service__title:hover,
+.service__more:hover {
+    color: var(--color-primario);
+}
+
+.service__more::before {}
