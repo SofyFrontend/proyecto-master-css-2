@@ -6,6 +6,9 @@
     --color-secundario: #fff;
     --color-tect-btn: #0d6efd;
     --color_bg_btn: #ffdc60;
+    --color-subtitulo: #c75c6f;
+    --color-titulo: #292930;
+
 }
 
 /* estilos generales */
@@ -288,39 +291,49 @@ body {
     left: 50%;
     animation: move-shape3 20s infinite;
 }
+
 @keyframes move-shape3 {
-    0%{
-transform: translateX(0)translateY(0);
+    0% {
+        transform: translateX(0)translateY(0);
     }
-    40%{
+
+    40% {
         transform: translateX(50px)translateY(-200px);
     }
-    75%{
+
+    75% {
         transform: translateX(50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0)translateY(0);
     }
 }
+
 .shapes__item--shape4 {
     bottom: 24rem;
     left: 45%;
     animation: move-shape4 30s infinite;
 }
+
 @keyframes move-shape4 {
-    0%{
-transform: translateX(0)translateY(0);
+    0% {
+        transform: translateX(0)translateY(0);
     }
-    40%{
+
+    40% {
         transform: translateX(-50px)translateY(200px);
     }
-    75%{
+
+    75% {
         transform: translateX(-500px);
     }
-    100%{
+
+    100% {
         transform: translateX(0)translateY(0);
     }
 }
+
 .shapes__item--shape4 .shapes__img {
     opacity: 0.5;
     width: 7.5rem;
@@ -332,20 +345,25 @@ transform: translateX(0)translateY(0);
     opacity: 0.7;
     animation: move-shape5 45s infinite;
 }
+
 @keyframes move-shape5 {
-    0%{
-transform: translateX(0)translateY(0);
+    0% {
+        transform: translateX(0)translateY(0);
     }
-    40%{
+
+    40% {
         transform: translateX(-600px) translateY(500px);
     }
-    75%{
+
+    75% {
         transform: translateX(30px) translateY(-800px);
     }
-    100%{
+
+    100% {
         transform: translateX(0)translateY(0);
     }
 }
+
 .shapes__item--shape6 {
     bottom: 10rem;
     left: 40%;
@@ -367,4 +385,36 @@ transform: translateX(0)translateY(0);
     100% {
         transform: translateY(0%);
     }
+}
+
+/* Servicios */
+.layout__services {
+    position: relative;
+    margin: 5rem 4rem;
+    z-index: 1;
+
+}
+
+.services__grid {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.services__header {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.services__subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-subtitulo);
+    margin-bottom: 1.5rem;
+}
+
+.service__title {
+    font-size: 6.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-titulo);
 }
