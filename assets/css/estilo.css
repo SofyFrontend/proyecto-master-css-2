@@ -427,6 +427,7 @@ body {
 
 .services__service {
     width: 33%;
+    height: 100%;
     padding: 5rem 4rem;
     margin-bottom: 4rem;
     border-radius: 3rem;
@@ -459,6 +460,7 @@ body {
     line-height: 1.4;
     margin-bottom: 3rem;
     transition: all 300ms ease-in-out;
+    color: var(--color-titulo);
 }
 
 .service__description {
@@ -478,8 +480,30 @@ body {
 }
 
 .service__title:hover,
-.service__more:hover {
+.service__more:hover{
     color: var(--color-primario);
 }
 
-.service__more::before {}
+.service__more::before {
+    content: "";
+    width: 3.4rem;
+    height: 1.5px;
+    background-color: var(--color-text-body);
+    position: absolute;
+    top:50%;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+.service__more:hover::before{
+    background-color: var(--color-primario);
+}
+/* escalonado de las tarjetas */
+.services__service--bottom{
+    margin-top: 20rem;
+}
+.services__service--middle{
+    margin-top: 10rem;
+}
+.services__service--top{
+    margin-top: 0;
+}
