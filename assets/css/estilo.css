@@ -1,5 +1,6 @@
 /* variables */
 :root {
+    --mxwidth: 1320px;
     --color-text-body: #525260;
     --color-primario: #5956e9;
     --color-banner: #2522ba;
@@ -9,6 +10,7 @@
     --color-subtitulo: #c75c6f;
     --color-titulo: #292930;
     --color-bg-services: #f8f8f8;
+    --color-bg-proyects: #ecf2f6;
 }
 
 /* estilos generales */
@@ -396,7 +398,7 @@ body {
 }
 
 .services__grid {
-    max-width: 1320px;
+    max-width: var(--mxwidth);
     margin: 0 auto;
 }
 
@@ -405,14 +407,16 @@ body {
     margin-bottom: 2rem;
 }
 
-.services__subtitle {
+.services__subtitle,
+.proyects__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitulo);
     margin-bottom: 1.5rem;
 }
 
-.services__title {
+.services__title,
+.proyects__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -480,7 +484,7 @@ body {
 }
 
 .service__title:hover,
-.service__more:hover{
+.service__more:hover {
     color: var(--color-primario);
 }
 
@@ -490,39 +494,72 @@ body {
     height: 1.5px;
     background-color: var(--color-text-body);
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 0;
     transition: all 300ms ease-in-out;
 }
-.service__more:hover::before{
+
+.service__more:hover::before {
     background-color: var(--color-primario);
 }
+
 /* escalonado de las tarjetas */
-.services__service--bottom{
+.services__service--bottom {
     margin-top: 20rem;
 }
-.services__service--middle{
+
+.services__service--middle {
     margin-top: 10rem;
 }
-.services__service--top{
+
+.services__service--top {
     margin-top: 0;
 }
+
 /* formas detras de los servicios */
-.service-shapes__item{
+.service-shapes__item {
     position: absolute;
     z-index: -1;
     pointer-events: none;
 }
-.service-shapes__item--shape1{
-    top:-60px;
+
+.service-shapes__item--shape1 {
+    top: -60px;
     right: 85px;
 
 }
-.service-shapes__item--shape2{
-    top:10%;
-left: 652px;
+
+.service-shapes__item--shape2 {
+    top: 10%;
+    left: 652px;
 }
-.service-shapes__item--shape3{
-    top:34%;
+
+.service-shapes__item--shape3 {
+    top: 34%;
     left: 80px;
 }
+
+/* Proyectos */
+
+.layout__proyects {
+    position: relative;
+    background-color: var(--color-bg-proyects);
+    padding: 14rem 10rem;
+    z-index: 1;
+}
+
+.proyects__grid {
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+
+}
+
+.proyects__header {
+    margin-bottom: 4rem;
+}
+
+.proyects__subtitle{
+    text-transform: capitalize;
+}
+
+
