@@ -416,7 +416,8 @@ body {
 .proyects__subtitle,
 .stats__subtitle,
 .reviews__subtitle,
-.clients__subtitle {
+.clients__subtitle,
+.news__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitulo);
@@ -426,7 +427,8 @@ body {
 .services__title,
 .proyects__title,
 .stats__title,
-.reviews__title {
+.reviews__title,
+.news__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -764,7 +766,8 @@ body {
     margin-bottom: 6rem;
 }
 
-.reviews__description {
+.reviews__description,
+.news__description {
     margin: 3rem 0;
     width: 50%;
     font-size: 2rem;
@@ -786,7 +789,7 @@ body {
     margin-bottom: 3rem;
 }
 
-.review__description {
+.review__description{
     font-size: 2.4rem;
     line-height: 1.2;
     color: var(--color-bg-dark);
@@ -882,4 +885,25 @@ cursor: pointer;
     top:10px;
     right: 0;
     pointer-events: none;
+}
+/* noticias */
+.layout__news{
+    position: relative;
+    z-index: 1;
+    padding: 14rem 0 ;
+}
+.news__container{
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+}
+.new__header{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.news__description{
+    text-align: center;
+    margin: 0 auto;
+}
+.news__title{
+    margin-bottom: 3rem;
 }
