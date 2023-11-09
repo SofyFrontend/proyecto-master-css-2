@@ -576,9 +576,11 @@ body {
     font-weight: 500;
     cursor: pointer;
     padding: 0.8rem 0;
+    transition: var(--all-300-eio);
 }
 
-.categories__item--active {
+.categories__item--active,
+.categories__item:hover {
     border-bottom: 3px solid var(--color-primario);
 }
 
