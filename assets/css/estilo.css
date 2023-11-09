@@ -12,6 +12,10 @@
     --color-titulo: #292930;
     --color-bg-services: #f8f8f8;
     --color-bg-proyects: #ecf2f6;
+    --color-bg-dark: #27272e;
+    --color-text-descripcion: #99a1aa;
+
+
 }
 
 /* estilos generales */
@@ -409,7 +413,8 @@ body {
 }
 
 .services__subtitle,
-.proyects__subtitle {
+.proyects__subtitle,
+.stats__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitulo);
@@ -417,7 +422,8 @@ body {
 }
 
 .services__title,
-.proyects__title {
+.proyects__title,
+.stat__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -651,4 +657,35 @@ body {
 .proyect-shapes__item--shape3 {
     top: 35%;
     left: 4%;
+}
+
+/* Estadisticas*/
+.layout__stats {
+    background-color: var(--color-bg-dark);
+    padding: 14rem 11rem;
+
+}
+
+.stats__container {
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+
+}
+
+.stats__header {
+    text-align: center;
+}
+
+.stat__title {
+    color: var(--color-secundario);
+    font: 6.4rem;
+    margin-bottom: 3rem;
+}
+
+.stats__description {
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    color: var(--color-text-descripcion);
 }
