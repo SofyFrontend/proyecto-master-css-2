@@ -14,7 +14,7 @@
     --color-bg-proyects: #ecf2f6;
     --color-bg-dark: #27272e;
     --color-text-descripcion: #99a1aa;
---color-hover-dark:#303035;
+    --color-hover-dark: #303035;
 
 }
 
@@ -414,7 +414,8 @@ body {
 
 .services__subtitle,
 .proyects__subtitle,
-.stats__subtitle {
+.stats__subtitle,
+.reviews__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitulo);
@@ -423,7 +424,8 @@ body {
 
 .services__title,
 .proyects__title,
-.stats__title {
+.stats__title,
+.reviews__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -689,33 +691,39 @@ body {
     margin-bottom: 4rem;
     color: var(--color-text-descripcion);
 }
-.stats__progress{
+
+.stats__progress {
     display: flex;
     flex-direction: row;
-    gap:3rem;
+    gap: 3rem;
 
 }
-.stats__stat{
+
+.stats__stat {
     width: 25%;
     text-align: center;
     padding: 7rem 2rem;
     border-radius: 2rem;
 }
-.stats__stat:hover{
-    background:linear-gradient(180deg, var(--color-bg-dark) ,var(--color-hover-dark));
-    border:1px solid var(--color-hover-dark);
+
+.stats__stat:hover {
+    background: linear-gradient(180deg, var(--color-bg-dark), var(--color-hover-dark));
+    border: 1px solid var(--color-hover-dark);
 }
-.stat__icon{
-    
+
+.stat__icon {
+
     margin-bottom: 2rem;
     text-align: center;
 
 }
-.stat__icon>img{
+
+.stat__icon>img {
     margin: 0 auto;
     text-align: center;
 }
-.stat__count{
+
+.stat__count {
     display: inline-block;
     text-align: center;
     font-size: 6rem;
@@ -724,10 +732,98 @@ body {
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }
-.stat__title{text-align: center;
+
+.stat__title {
+    text-align: center;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
     color: var(--color-secundario);
 }
 
+/* reseñas */
+.layout__reviews {
+    position: relative;
+    z-index: 1;
+    padding-top: 14rem;
+    padding-bottom: 11rem;
+}
+
+.reviews__grid {
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+}
+
+.reviews__header {
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+.reviews__description {
+    margin: 3rem 0;
+    width: 50%;
+    font-size: 2rem;
+    color: var(--color-text-descripcion);
+}
+
+.reviews__container {
+    display: flex;
+    gap: 3rem;
+}
+
+.reviews__review {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.review__company {
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.review__description {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--color-bg-dark);
+    margin-bottom: 4rem;
+}
+
+.review__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.author__container-img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author__content {
+    flex: 1;
+}
+
+.author__name {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--color-bg-dark);
+    margin-bottom: 0.3rem;
+}
+
+.author__description {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--color-text-descripcion);
+    opacity: 0.7;
+}
+
+
+.review-shapes__item{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top:16%;
+    right: 26%;
+}
