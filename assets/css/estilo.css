@@ -14,7 +14,7 @@
     --color-bg-proyects: #ecf2f6;
     --color-bg-dark: #27272e;
     --color-text-descripcion: #99a1aa;
-
+--color-hover-dark:#303035;
 
 }
 
@@ -423,7 +423,7 @@ body {
 
 .services__title,
 .proyects__title,
-.stat__title {
+.stats__title {
     font-size: 6.7rem;
     font-weight: 500;
     line-height: 1.2;
@@ -676,7 +676,7 @@ body {
     text-align: center;
 }
 
-.stat__title {
+.stats__title {
     color: var(--color-secundario);
     font: 6.4rem;
     margin-bottom: 3rem;
@@ -688,4 +688,20 @@ body {
     margin: 0 auto;
     margin-bottom: 4rem;
     color: var(--color-text-descripcion);
+}
+.stats__progress{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+
+}
+.stats__stat{
+    width: 25%;
+    text-align: center;
+    padding: 7rem 6rem;
+    border-radius: 2rem;
+}
+.stats__stat:hover{
+    background:linear-gradient(180deg, var(--color-bg-dark) ,var(--color-hover-dark));
+    border:1px solid var(--color-hover-dark);
 }
