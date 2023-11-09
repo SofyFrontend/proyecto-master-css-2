@@ -1,7 +1,7 @@
 /* variables */
 :root {
     --mxwidth: 1320px;
-    --all-300-eio:all 300ms ease-in-out;
+    --all-300-eio: all 300ms ease-in-out;
     --color-text-body: #525260;
     --color-primario: #5956e9;
     --color-banner: #2522ba;
@@ -395,7 +395,7 @@ body {
     position: relative;
     margin: 14rem 10rem;
     z-index: 2;
-
+    margin-bottom: 8rem;
 }
 
 .services__grid {
@@ -637,16 +637,18 @@ body {
     top: 0;
 
 }
-.proyect-shapes__item--shape1{
-right: 10%;
-top:4%;
-}
-.proyect-shapes__item--shape2{
-top: 8%;
-right: 15%;
-}
-.proyect-shapes__item--shape3{
-top: 35%;
-left: 4%;
+
+.proyect-shapes__item--shape1 {
+    right: 10%;
+    top: 4%;
 }
 
+.proyect-shapes__item--shape2 {
+    top: 8%;
+    right: 15%;
+}
+
+.proyect-shapes__item--shape3 {
+    top: 35%;
+    left: 4%;
+}
