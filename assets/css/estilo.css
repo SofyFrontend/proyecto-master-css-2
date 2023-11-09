@@ -415,7 +415,8 @@ body {
 .services__subtitle,
 .proyects__subtitle,
 .stats__subtitle,
-.reviews__subtitle {
+.reviews__subtitle, 
+.clients__subtitle {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-subtitulo);
@@ -662,13 +663,15 @@ body {
 }
 
 /* Estadisticas*/
-.layout__stats {
+.layout__stats, 
+.layout__clients {
     background-color: var(--color-bg-dark);
     padding: 14rem 11rem;
 
 }
 
-.stats__container {
+.stats__container,
+.clients__container {
     max-width: var(--mxwidth);
     margin: 0 auto;
 
@@ -678,13 +681,15 @@ body {
     text-align: center;
 }
 
-.stats__title {
+.stats__title, 
+.clients__title{
     color: var(--color-secundario);
-    font: 6.4rem;
+    font-size: 6.4rem;
     margin-bottom: 3rem;
 }
 
-.stats__description {
+.stats__description,
+.clients__description {
     font-size: 2rem;
     width: 60%;
     margin: 0 auto;
@@ -826,4 +831,22 @@ body {
     pointer-events: none;
     top:16%;
     right: 26%;
+}
+
+/* clientes */
+.layout__clients{
+    padding-left: 10rem;
+}
+.clients__header{
+    text-align: left;
+}
+.clients__title{
+    width: 50%;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.clients__description{
+    text-align: left;
+width: 40%;
+margin: 0;
 }
