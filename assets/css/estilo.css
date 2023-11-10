@@ -963,33 +963,59 @@ body {
 .new__content {
     flex: 1
 }
-.new__title{
+
+.new__title {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.4;
-color:var(--color-titulo);
-margin-bottom: 2rem;
-transition: var(--all-300-eio);
+    color: var(--color-titulo);
+    margin-bottom: 2rem;
+    transition: var(--all-300-eio);
 }
+
 .new__title:hover,
-.nre__more:hover{
-    color:var(--color-primario)
+.nre__more:hover {
+    color: var(--color-primario)
 }
-.new__description{
+
+.new__description {
     font-size: 1.7rem;
     font-weight: normal;
     color: var(--color-text-descripcion);
     margin-bottom: 3rem;
 }
-.nre__more{
+
+.nre__more {
     display: inline-block;
     font-size: 1.7;
-font-weight: 700;
-color:var(--color-hover-dark);
-transition: var(--all-300-eio);
+    font-weight: 700;
+    color: var(--color-hover-dark);
+    transition: var(--all-300-eio);
 
 }
-.new__icon{
+
+.new__icon {
     font-size: 1.2rem;
     vertical-align: middle;
+}
+
+.new-shapes__item{
+    position: absolute;
+    z-index: -1;
+}
+.new-shapes__item--shape1{
+    top:14rem;
+    left: 31.5rem;
+}
+.new-shapes__item--shape2{
+    top:12rem;
+    right: 0;
+}
+.new-shapes__item--shape3{
+    bottom:8rem;
+    left: 0;
+}
+.new-shapes__item--shape4{
+bottom: 6rem;
+right: 16rem;
 }
