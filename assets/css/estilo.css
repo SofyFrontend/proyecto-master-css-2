@@ -999,23 +999,69 @@ body {
     vertical-align: middle;
 }
 
-.new-shapes__item{
+.new-shapes__item {
     position: absolute;
     z-index: -1;
 }
-.new-shapes__item--shape1{
-    top:14rem;
+
+.new-shapes__item--shape1 {
+    top: 14rem;
     left: 31.5rem;
 }
-.new-shapes__item--shape2{
-    top:12rem;
+
+.new-shapes__item--shape2 {
+    top: 12rem;
     right: 0;
 }
-.new-shapes__item--shape3{
-    bottom:8rem;
+
+.new-shapes__item--shape3 {
+    bottom: 8rem;
     left: 0;
 }
-.new-shapes__item--shape4{
-bottom: 6rem;
-right: 16rem;
+
+.new-shapes__item--shape4 {
+    bottom: 6rem;
+    right: 16rem;
+}
+
+/* contacto */
+
+.layout__contact {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+    background-color: var(--color-primario);
+}
+
+.contact__container {
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.contact__header {
+    margin-bottom: 6.5rem;
+    text-align: center;
+
+}
+
+.contact__subtitle {
+    display: inline-block;
+    color: var(--color_bg_btn);
+    font-size: 2rem;
+    font-family: 500;
+    margin-bottom: 1.5rem;
+
+}
+.contact__title{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--color-secundario);
 }
