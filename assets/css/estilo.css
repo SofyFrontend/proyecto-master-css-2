@@ -1121,6 +1121,43 @@ body {
     bottom: 0;
     right: 8rem;
 }
-.contacts__backshapes {
-    
+
+.backshapes__item {
+    position: absolute;
+z-index: -1;
+}
+.backshapes__item--shape1{
+top: 0;
+left: 32%;
+}
+.backshapes__item--shape2{
+    top:18rem;
+    left: 18%;
+    opacity: 0.5;
+    animation:move-shape3 20s infinite ;
+}
+.backshapes__item--shape3{
+    top:31%;
+    left: 20%;
+    animation:move-shape4 25s infinite ;
+}
+.backshapes__item--shape4{
+    top:44%;
+    left: 28%;
+    animation:move-shape3 30s infinite ;
+}
+.backshapes__item--shape5{
+    top:50%;
+    right: 17%;
+    animation:move-shape4 30s infinite ;
+}
+.backshapes__item--shape6{
+    top:26%;
+    right: 21%;
+    animation:move-shape5 30s infinite ;
+}
+.backshapes__item--shape7{
+    top:30%;
+    right: 15%;
+    animation:move-shape3 30s infinite ;
 }
