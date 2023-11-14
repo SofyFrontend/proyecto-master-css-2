@@ -1161,3 +1161,36 @@ left: 32%;
     right: 15%;
     animation:move-shape3 30s infinite ;
 }
+
+/* footer */
+.layout__footer{
+padding-top: 1rem;
+}
+.footer__container{
+    max-width: var(--mxwidth);
+    margin: 0 auto;
+}
+.footer__top{
+    padding-bottom: 7rem;
+}
+.footer__social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social__img{
+    display: inline-block;
+    color: var(--color-text-descripcion);
+    font-size: 3rem;
+    padding: 0.5rem;
+    transition: var(--all-300-eio);
+}
+.social__link:hover >.social__img{
+color: black;
+}
+
+.footer__main{
+    display: flex;flex-direction: row;
+    f
+}
