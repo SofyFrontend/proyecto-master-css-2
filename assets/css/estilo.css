@@ -1212,34 +1212,68 @@ body {
 .footer__fleft {
     flex-basis: 50%;
 }
-.fleft__container{
+
+.fleft__container {
     border-right: 1px solid var(--color-bordes);
     padding-right: 8rem;
     margin-right: 4rem;
     margin-bottom: 8rem;
 }
-.fleft__title{
+
+.fleft__title {
     display: inline-block;
     font-size: 6.4rem;
     font-weight: 500;
-    color:var(--color-titulo);
+    color: var(--color-titulo);
     margin-bottom: 2rem;
     line-height: 1.2;
 }
-.fleft__subtitle{
+
+.fleft__subtitle {
     margin-bottom: 4rem;
     font-size: 1.7rem;
 }
-.fleft__group{
+
+.fleft__group {
     position: relative;
     width: 100%;
     background-color: var(--color-secundario);
     border-radius: 20px;
     height: 7.2rem;
     padding: 1rem;
-    padding-right: 5.5rem;
     box-shadow: 0 24px 48px -15px #ddd;
-
     display: flex;
+align-items: center;
+justify-content: space-between;
+}
 
+.fleft__mail--icon {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.fleft_form-control {
+    display: block;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+    height: auto;
+    border: none;
+    outline: none;
+    color: var(--color-text-body);
+    flex: 1;
+}
+.fleft__btn{
+    height: 5.2;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    border-radius: 16px;
+    padding: 1.4rem 3rem;
+    transition: var(--all-300-eio);
+}
+.fleft__btn:hover{
+    background-color: var(--color-banner);
 }
