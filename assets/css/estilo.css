@@ -1243,8 +1243,8 @@ body {
     padding: 1rem;
     box-shadow: 0 24px 48px -15px #ddd;
     display: flex;
-align-items: center;
-justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .fleft__mail--icon {
@@ -1263,17 +1263,55 @@ justify-content: space-between;
     color: var(--color-text-body);
     flex: 1;
 }
-.fleft__btn{
+
+.fleft__btn {
     height: 5.2;
     cursor: pointer;
-    border:none;
+    border: none;
     outline: none;
     background-color: var(--color-primario);
-    color:var(--color-secundario);
+    color: var(--color-secundario);
     border-radius: 16px;
     padding: 1.4rem 3rem;
     transition: var(--all-300-eio);
 }
-.fleft__btn:hover{
+
+.fleft__btn:hover {
     background-color: var(--color-banner);
+}
+
+.footer__fright {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+
+}
+
+.footer__widget {
+    margin-bottom: 8rem;
+
+}
+
+.footer__widget--50 {
+    flex-basis: 50%;
+}
+
+.footer__widget--25 {
+    flex-basis: 25%;
+}
+.widget__title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-titulo);
+    margin-bottom: 3rem;
+}
+.widget__link{
+    font-size: 1.8rem;
+    padding: 0.8rem 0;
+    display: inline-block;
+    transition: var(--all-300-eio);
+}
+.widget__link:hover{
+    color:var(--color-banner);
 }
