@@ -1102,20 +1102,25 @@ body {
 
 .contact__thumb {
     display: inline-block;
-    position: absolute;
+    position: relative;
 }
 
 .contact__thumb--chat {
     margin-right: -18rem;
-    bottom: -0.8rem;
+    margin-bottom: -0.8rem;
 }
 
 .contact__thumb--laptop {
+    position: absolute;
     bottom: 0;
     left: 16rem;
 }
 
 .contact__thumb--mobile {
+    position: absolute;
     bottom: 0;
     right: 8rem;
+}
+.contacts__backshapes {
+    
 }
