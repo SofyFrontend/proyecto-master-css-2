@@ -101,8 +101,79 @@
         border-left: none;
         padding-left: 0;
     }
-    .layout__contact{
+
+    .layout__contact {
         padding-top: 10rem;
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .layout {
+        min-width: auto;
+    }
+
+    .navbar__nav {
+        display: none;
+    }
+
+    .layout__banner {
+        min-height: 100%;
+    }
+
+    .banner__content {
+        width: 60%;
+    }
+
+    .banner__title {
+        font-size: 5rem;
+    }
+
+    .banner__btn {
+        padding: 2rem 3.5rem;
+    }
+
+    .shapes__item {
+        width: 50%;
+    }
+
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container {
+        max-width: 72rem;
+    }
+
+    .services__subtitle,
+    .proyects__subtitle,
+    .stats__subtitle,
+    .reviews__subtitle,
+    .clients__subtitle,
+    .news__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .services__title,
+    .proyects__title,
+    .stats__title,
+    .reviews__title,
+    .news__title {
+        font-size: 5rem;
+    }
+    .services__list{
+        flex-direction: column;
+
+    }
+    .services__service{
+        width: 96%;
+        margin-bottom: 1rem;
+        margin-top:1rem;
+        padding: 4rem 2.5rem;
+    }
+    .service-shapes__item--shape2{
+        display: none;
+    }
+    .layout__services{
         padding-bottom: 7rem;
     }
 }
