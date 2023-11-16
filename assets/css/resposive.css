@@ -427,3 +427,49 @@
         margin-right: 0;
     }
 }
+
+@media(max-width:640px) {
+
+    /* .services__grid,
+    .proyects__grid, */
+    .stats__container,
+    .contact__container,
+    .reviews__grid,
+    .clients__container,
+    .news__container,
+    .footer__container,
+    .layout__proyects {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .layout__services {
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+
+    .contact__thumb--chat {
+        margin-right: -5rem;
+    }
+
+    .contact__thumb--laptop {
+        left: 0rem;
+    }
+
+    .contact__thumb--mobile {
+        right: -21rem;
+    }
+
+    .contact__img {
+        width: 35%
+    }
+
+    .footer__fright {
+        flex-basis: 100%;
+        gap: 4rem;
+    }
+
+    .footer__widget--50 {
+        flex-basis: auto;
+    }
+}
