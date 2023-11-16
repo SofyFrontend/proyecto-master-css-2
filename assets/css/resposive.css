@@ -271,4 +271,35 @@
     .contact__img {
         width: 70%
     }
+
+    .social__img {
+        font-size: 2rem;
+    }
+
+    .footer__main {
+        flex-direction: column;
+    }
+    .footer__fleft{
+        width: 100%;
+        border: none;
+    }
+    .footer__fright{
+        width: 100%;
+    }
+    .footer__bottom{
+        flex-direction: column;
+    }
+    .footer__copyright{
+        flex-basis: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+        display: block;
+    }
+    .footer__links{
+        flex-basis: auto;
+        text-align: center;
+    }
+    .footer__flinks{
+        justify-content: center;
+    }
 }
