@@ -601,9 +601,11 @@ body {
     flex-wrap: wrap;
     gap: 4rem 7rem;
 }
-.proyects__proyect{
+
+.proyects__proyect {
     width: calc(50% - 3.5rem);
 }
+
 .proyect__container-img {
     width: 100%;
     border-radius: 30px 30px 0 0;
@@ -1301,75 +1303,89 @@ body {
 .footer__widget--25 {
     flex-basis: 25%;
 }
-.widget__title{
+
+.widget__title {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
     color: var(--color-titulo);
     margin-bottom: 3rem;
 }
-.widget__link{
+
+.widget__link {
     font-size: 1.8rem;
     padding: 0.8rem 0;
     display: inline-block;
     transition: var(--all-300-eio);
 }
-.widget__link:hover{
-    color:var(--color-banner);
+
+.widget__link:hover {
+    color: var(--color-banner);
 }
-.footer__bottom{
+
+.footer__bottom {
     font-size: 1.7rem;
     border-top: 1px solid var(--color-bordes);
-    padding: 2.5rem 0 ;
+    padding: 2.5rem 0;
     display: flex;
 }
-.footer__copyright{
+
+.footer__copyright {
     flex-basis: 50%;
 }
-.copyright__text{
+
+.copyright__text {
     display: inline-block;
     color: var(--color-text-descripcion);
 }
+
 .copyright__text>a {
     display: inline;
 }
-.footer__links{
+
+.footer__links {
     flex-basis: 50%;
 }
-.footer__flinks{
+
+.footer__flinks {
     position: relative;
     display: flex;
     justify-content: end;
     gap: 2rem;
 }
-.flinks__title{
+
+.flinks__title {
     transition: var(--all-300-eio);
 }
-.flinks__title:hover{
+
+.flinks__title:hover {
     color: var(--color-banner);
 }
-.flinks__item{
+
+.flinks__item {
     display: inline-block;
     position: relative;
 }
-.flinks__item--separator::after{
-content: "";
-height: 4px;
-width: 4px;
-background-color: var(--color-text-descripcion);
-border-radius: 50%;
-position: absolute;
-top:46%;
-right:-8%; 
+
+.flinks__item--separator::after {
+    content: "";
+    height: 4px;
+    width: 4px;
+    background-color: var(--color-text-descripcion);
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    right: -8%;
 }
 
 /* estilos navegación responsive */
 
-.navbar__mobile-btn{
+.navbar__mobile-btn {
     display: none;
-    
+
 }
-.mobile-btn__wrap{
+
+.mobile-btn__wrap {
     height: 5rem;
     width: 5rem;
     border-radius: 5rem;
@@ -1381,21 +1397,53 @@ right:-8%;
     justify-content: center;
     cursor: pointer;
 }
-.mobile-btn__line{
+
+.mobile-btn__line {
     width: 2rem;
     height: 0.2rem;
     background-color: var(--color-secundario);
     margin-bottom: 0.4rem;
     border-radius: 1rem;
     transition: var(--all-300-eio);
-    
-}
-.mobile-btn__line:last-child{
-    width: 1rem;
-    margin-bottom: 0;
-    margin-right:-1rem ;
+
 }
 
-.menu-mobile{
-    display: block;
+.mobile-btn__line:last-child {
+    width: 1rem;
+    margin-bottom: 0;
+    margin-right: -1rem;
 }
+
+.menu-mobile {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 30rem;
+    height: 100%;
+    background-color: var(--color-secundario);
+    padding: 5rem 1rem;
+    padding-top: 0;
+    box-shadow: 0px 0px 85px -35px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    transition: all 800ms ease-in-out;
+}
+
+.menu-mobile__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2 1rem;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--color-bordes);
+}
+
+.menu-mobile__container-logo {
+    width: 15rem;
+    ;
+}
+
+.menu-mobile__link-logo {}
