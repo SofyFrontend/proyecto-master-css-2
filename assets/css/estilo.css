@@ -1430,16 +1430,17 @@ body {
     overflow-y: auto;
     transition: all 800ms ease-in-out;
 }
+
 .menu-mobile--show{
     visibility: visible;
-    opacity: 0;
+    opacity: 1;
     left: 0;
 }
 .menu-mobile__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2 1rem;
+    margin: 2rem 1rem;
     padding: 2rem 0rem;
     border-bottom: 1px solid var(--color-bordes);
 }
