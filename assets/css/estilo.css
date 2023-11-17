@@ -1487,7 +1487,7 @@ body {
     font: 1.4rem;
 }
 .menu-mobile__submenu-mobile{
-    display: block;
+    display: none;
     visibility: visible;
     opacity: 1;
     min-width: 100%;
@@ -1496,7 +1496,7 @@ padding-bottom: 1rem;
 
 }
 .submenu-mobile__title{
-    display: none;
+    display: block;
     text-decoration: none;
     padding: 0.7rem 1rem;
     position: relative;
