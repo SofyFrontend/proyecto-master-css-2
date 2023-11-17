@@ -117,6 +117,9 @@
         display: none;
     }
 
+    .navbar__mobile-btn{
+        display: block;
+    }
     .layout__banner {
         min-height: 100%;
     }
