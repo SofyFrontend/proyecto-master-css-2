@@ -1522,3 +1522,34 @@ body {
     text-transform: capitalize;
     color: var(--color-text-body)
 }
+
+/* estilos boton modo oscuro */
+
+.swicher {
+    position: fixed;
+    top: 20rem;
+    left: 0;
+    background-color: var(--color-primario);
+    border-radius: 0 3rem 3rem 0;
+    padding: 3rem;
+    z-index: 5;
+}
+
+.swicher-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+.swicher__icon-light,
+.swicher__icon-dark{
+    font-size:1.8rem ;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.6rem;
+    color: var(--color-secundario);
+}
+.swicher__icon-dark{
+    display: none;
+}
