@@ -14,7 +14,7 @@
     --color-bg-proyects: #292930;
     --color-bg-dark: #27272e;
     --color-text-descripcion: #99a1aa;
-    --color-hover-dark: #303035;
+    --color-hover-dark: #ffdc60;
     --color-bordes: #393940;
 
 }
@@ -35,7 +35,7 @@ body{
     background-color: var(--color-banner);
 }
 .contact__subtitle{
-    color: #ffdc60;
+    color: var(--color-hover-dark);
 }
 .contact__btn{
     background-color:var(--color-primario) ;
@@ -46,4 +46,37 @@ body{
 }
 .fleft_form-control{
     background-color:var(--color-banner);
+}
+.nav__submenu{
+    background-color: var(--color-banner);
+}
+.nav__title:hover{
+    color: var(--color-text-body);
+}
+.nav__title::before{
+    color: var(--color-secundario);
+}
+.submenu__title:hover {
+    color: var(--color-secundario);
+}
+
+.submenu__title::after {
+    
+    background-color: var(--color-secundario);
+    
+}
+.review__description{
+    color:var(--color-text-body);
+}
+.services__service{
+    background-color:var(--color-banner) ;
+}
+.proyect__link-title:hover{
+    color:var(--color-hover-dark);
+}
+.nre__more{
+    color:var(--color-text-body)
+}
+.widget__link{
+    color:var(--color-hover-dark);
 }
