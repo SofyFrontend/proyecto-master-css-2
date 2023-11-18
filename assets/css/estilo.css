@@ -6,7 +6,7 @@
     --color-primario: #5956e9;
     --color-banner: #2522ba;
     --color-secundario: #fff;
-    --color-tect-btn: #0d6efd;
+    --color-text-btn: #0d6efd;
     --color_bg_btn: #ffdc60;
     --color-subtitulo: #c75c6f;
     --color-titulo: #292930;
@@ -251,7 +251,7 @@ body {
     padding: 2.8rem 4.5rem;
     border-radius: 20px;
     background-color: var(--color-secundario);
-    color: var(--color-tect-btn);
+    color: var(--color-text-btn);
     font-size: 1.7rem;
     font-weight: bold;
     text-transform: capitalize;

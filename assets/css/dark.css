@@ -1,0 +1,49 @@
+/* variables */
+:root {
+    --mxwidth: 1320px;
+    --all-300-eio: all 300ms ease-in-out;
+    --color-text-body: #d3d3d4;
+    --color-primario: #5956e9;
+    --color-secundario: #d3d3d4;
+    --color-banner: #27272e;
+    --color-text-btn: #fff;
+    --color_bg_btn: #2522ba;
+    --color-subtitulo: #c75c6f;
+    --color-titulo: #d3d3d4;
+    --color-bg-services: #27272e;
+    --color-bg-proyects: #292930;
+    --color-bg-dark: #27272e;
+    --color-text-descripcion: #99a1aa;
+    --color-hover-dark: #303035;
+    --color-bordes: #393940;
+
+}
+body{
+    background-color:#212121 ;
+}
+.banner__btn{
+    background-color: var(--color-primario);
+    color:var(--color-text-btn);
+}
+.menu__navbar--fixed{
+    background-color:var(--color-banner);
+}
+.proyect__content{
+    background-color: var(--color-banner);
+}
+.layout__contact::before{
+    background-color: var(--color-banner);
+}
+.contact__subtitle{
+    color: #ffdc60;
+}
+.contact__btn{
+    background-color:var(--color-primario) ;
+}
+.fleft__group{
+    background-color:var(--color-banner);
+    box-shadow: none;
+}
+.fleft_form-control{
+    background-color:var(--color-banner);
+}
